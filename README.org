@@ -1,0 +1,11 @@
+#+title: ESS with Spacemacs
+
+* Goals
+
+- Provide a /very/ short introduction to using [[https://ess.r-project.org/][ESS]] from [[https://www.spacemacs.org/][spacemacs]]. 
+- "Sell" a spacemacs approach to existing ESS users.
+
+* Intended audience
+
+Users of R who are interested in moving to an ESS alternative to Rstudio and who
+do not necessarily already have emacs experience.
