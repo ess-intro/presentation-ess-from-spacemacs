@@ -14,5 +14,9 @@ cool kids are talking about.
 * Outline
 
 1. Motivation for spacemacs
-2. WHat ESS looks like from spacemacs
+   - opinionated quick-start configuration
+   - vim/emacs keybindings
+   - "ergonomics, mnemonics and consistency"
+2. How setting up ESS differs for spacemacs (following the steps in
+   [[https://github.com/ess-intro/presentation-ess-base-install][presentation-ess-base-install]]).
 3. How to learn more about spacemacs
