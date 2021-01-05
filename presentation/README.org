@@ -1,0 +1,86 @@
+#+title: ESS with Spacemacs
+
+* Goals of this presentation
+
+1. Ultra-quick start guide to ESS via spacemacs
+2. Give pointers for further spacemacs use
+
+* What is spacemacs?
+
+#+begin_quote
+The best editor is neither Emacs nor Vim, it's Emacs and Vim!
+#+end_quote
+
+#+begin_quote
+ergonomics, mnemonics and consistency 
+#+end_quote
+
+* Ultra-quick start guide
+
+** Clone the repository
+
+#+begin_src sh
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d 
+#+end_src
+
+** Start emacs and choose your keybindings
+
+** Open the configuration file: =SPC f e d=
+
+** Set up your layers in =dotspacemacs-configuration-layers=
+
+#+begin_src emacs-lisp
+   '(
+     better-defaults
+     emacs-lisp
+     ess
+     git
+     helm
+     org
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+     syntax-checking
+     version-control)
+#+end_src
+
+** Restart: =SPC q r=
+
+** Profit!
+
+- =SPC f f= to find an R file
+- =SPC m '= to start a REPL
+- =SPC m <x>= to run commands where =<x>=
+  + =s b= /sends/ the /buffer/
+  + =s r= /sends/ the /region/
+
+* More spacemacs
+
+#+begin_quote
+ergonomics, mnemonics and consistency 
+#+end_quote
+
+** ergonomics
+
+Keybindings start with =SPC= and everything uses helm
+
+** mnemonics
+
+Often you can guess the keybindings for common functionality
+
+- /files/ =SPC f=
+  + /find file/ =SPC f f=
+  + dired /jump/ =SPC f j=
+- /modes/ =SPC m=
+  + /go/ to a definition =SPC m g=
+  + /send/ code to the REPL =SPC m s=
+- /buffers/ =SPC b=
+- /windows/ =SPC w=
+- /quit/ =SPC q=
+  
+** consistency
+
+bindings are fairly consistent across layers
+
+[[https://www.spacemacs.org/layers/LAYERS.html]]
+
