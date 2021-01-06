@@ -17,17 +17,38 @@ ergonomics, mnemonics and consistency
 
 * Ultra-quick start guide
 
+There is a proper [[https://github.com/syl20bnr/spacemacs#install][installation guide]] on GitHub, but here are the main steps.
+
+** Back up your existing configuration!
+
+To avoid losing your existing carefully crafted configuration, please back
+everything up before proceeding. The following should suffice for most people.
+
+#+begin_src sh
+cd ~
+mv .emacs.d .emacs.d.bak
+mv .emacs .emacs.bak
+#+end_src
+
 ** Clone the repository
 
 #+begin_src sh
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d 
 #+end_src
 
-** Start emacs and choose your keybindings
+** Start emacs and face the Wizard
+
+There is a wizard which will ask you a few questions about how to set up
+spacemacs. The defaults work well. This will generate a configuration file
+=~/.spacemacs=.
 
 ** Open the configuration file: =SPC f e d=
 
 ** Set up your layers in =dotspacemacs-configuration-layers=
+
+Layers are collections of packages that have been configured to work well
+together. There are lots of layers available. Here are some that are useful if
+you want to use spacemacs for ESS.
 
 #+begin_src emacs-lisp
    '(
@@ -50,11 +71,11 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 - =SPC f f= to find an R file
 - =SPC m '= to start a REPL
-- =SPC m <x>= to run commands where =<x>=
+- =SPC m <x>= to run commands which are mode specific
   + =s b= /sends/ the /buffer/
   + =s r= /sends/ the /region/
 
-* More spacemacs
+* Core pillars
 
 #+begin_quote
 ergonomics, mnemonics and consistency 
@@ -74,6 +95,7 @@ Often you can guess the keybindings for common functionality
 - /modes/ =SPC m=
   + /go/ to a definition =SPC m g=
   + /send/ code to the REPL =SPC m s=
+  + /evaluate/ code =SPC m e=
 - /buffers/ =SPC b=
 - /windows/ =SPC w=
 - /quit/ =SPC q=
@@ -84,3 +106,16 @@ bindings are fairly consistent across layers
 
 [[https://www.spacemacs.org/layers/LAYERS.html]]
 
+* More spacemacs
+
+- Documentation builtin: =SPC h SPC=
+- [[https://www.reddit.com/r/spacemacs]]
+- There is a vim clone [[https://github.com/SpaceVim/SpaceVim][SpaceVim]]
+
+* Gotchas
+
+** Source Code Pro
+
+Spacemacs seems to like to use source code pro, this beyond the scope of this
+presentation, but there are good instructions for installing it all over the
+internet.
