@@ -11,7 +11,11 @@ Users of R who are interested ESS and who do not necessarily already have emacs
 experience, and ESS users who want to know what this spacemacs thing is that the
 cool kids are talking about.
 
-* Outline
+* Presentation
+
+The presentation is in [[file:./presentation/README.org][=presentation/README.org=]]
+
+** Outline
 
 1. Motivation for spacemacs
    - opinionated quick-start configuration
