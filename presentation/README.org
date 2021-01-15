@@ -151,6 +151,13 @@ bindings are fairly consistent across layers
   
 * Gotchas
 
+** Vim keybindings while viewing Info pages
+
+I find Info pages confusing in general, but they seem even more confusing via
+spacemacs. The keys =np[]lrmsb<SPC>= all kind of work provided you hit =\= first
+to jump into emacs keybindings. To navigate around the text, you get =hjkl= by
+default.
+
 ** Source Code Pro
 
 Spacemacs seems to like to use source code pro, this beyond the scope of this
