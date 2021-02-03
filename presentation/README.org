@@ -127,8 +127,6 @@ emacs, there is even a spotify layer.
 ** Opening a shell and setting up the example
 
 - =SPC '= to start a shell
-- =SPC \'= to start a shell
-- ~SPC '~ to start a shell
   + change to the =example= directory of this repository.
   + use =ls= to confirm =demo.R= is there.
 - =SPC f f= to visit (/find/) the /file/ =demo.R=
