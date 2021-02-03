@@ -45,12 +45,17 @@ through the rest of the installation.
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d 
 #+end_src
 
+[[../resources/clone-spacemacs.png]]
+
 ** Start emacs and face the Wizard
 
 When you first start emacs after cloning the spacemacs repository you should see
 the spacemacs logo and there will be a message from a start up wizard in the
-mode line. The wizard will ask you a few questions about how to set up
-spacemacs, e.g. do you want vim or emacs keybindings. The defaults work well.
+mode line. The wizard will ask you a two questions: vim or emacs keybindings and
+do you want a standard or a light installation. The defaults of vim and and
+standard work well.
+
+[[../resources/spacemacs-startup-1.png]]
 
 The wizard will generate another file in your home directory, =.spacemacs=. This
 file is useful for finetuning how spacemacs works and brings us to an important
@@ -86,7 +91,6 @@ the =.spacemacs= file, which was automagically generated when you installed
 spacemacs. You can visit the =.spacemacs= file using =SPC f e d= (ie press the
 space bar, then the f-key, then the e-key then the d-key).
 
-
 ** Set up your layers in =dotspacemacs-configuration-layers=
 
 There are lots of options in the =.spacemacs= file, and the vast majority can be
@@ -96,19 +100,7 @@ example below. There will likely be some recommended layers already there, it's
 fine to leave them, you just need to make sure you have some layer called
 =shell= and the =ess= layer.
 
-#+begin_src emacs-lisp
-   '(
-     better-defaults
-     emacs-lisp
-     ess ;; <-- WOO!!!
-     helm
-     org
-     (shell :variables
-            shell-default-height 30
-            shell-default-position 'bottom)
-     syntax-checking
-     version-control)
-#+end_src
+[[../resources/add-ess-layer.png]]
 
 ** Restart: =SPC q r=
 
@@ -132,7 +124,9 @@ emacs, there is even a spotify layer.
 - =SPC f f= to visit (/find/) the /file/ =demo.R=
   + Add an expression to the file, e.g. =print("hello world")=.
   + Save the buffer with =SPC f s=, i.e. /file/ and /save/.
-  
+
+[[../resources/shell-and-new-file.png]]
+
 ** Visiting a file and starting a REPL
 
 - =SPC m '= to start a REPL
@@ -140,6 +134,8 @@ emacs, there is even a spotify layer.
   + Navigate between /windows/ by =SPC w= and selecting an action
 - /Send/ the whole /buffer/ with =SPC s b=.
 - /Send/ the selected /region/ with =SPC s r=.
+
+[[../resources/buffer-and-repl.png]]
 
 ** Kill the REPL
 
