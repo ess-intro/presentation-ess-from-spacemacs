@@ -36,13 +36,10 @@ If any of these core pillars is violated open an issue and we'll try our best to
 fix it.
 #+end_quote
 
-** ergonomics
+** mnemonics and discoverability
 
 Keybindings start with =SPC= and everything uses helm, and it has beautiful
 light and dark themes already configured (=SPC T n=)
-
-** mnemonics
-
 Often you can guess the keybindings for common functionality
 
 - /files/ =SPC f=
@@ -56,7 +53,7 @@ Often you can guess the keybindings for common functionality
 - /windows/ =SPC w=
 - /quit/ =SPC q= for the many ways to quit emacs (sorry vim).
 - /git/ =SPC g= for the the magit layer
-  
+
 ** consistency
 
 This is a really good aspect of spacemacs, the bindings are very consistent

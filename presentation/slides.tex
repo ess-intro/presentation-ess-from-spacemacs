@@ -1,0 +1,131 @@
+% Use Frédéric Santos' template as a starting point for the beamer presentation.
+\documentclass[presentation]{beamer}
+\beamertemplatenavigationsymbolsempty{}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
+
+\usepackage{newverbs}
+
+
+
+\usetheme{CambridgeUS}
+\usepackage[english]{babel}
+\usepackage{float}
+\definecolor{PalePurple}{RGB}{127, 90, 182}
+\definecolor{DarkPurple}{RGB}{98, 36, 134}
+\definecolor{grey}{RGB}{51, 63, 72}
+\setbeamercolor{title}{fg=white, bg=DarkPurple}
+\setbeamercolor{frametitle}{fg=black}
+\setbeamercolor{structure}{fg=PalePurple}
+\setbeamercolor{section in head/foot}{fg=white, bg=PalePurple}
+\setbeamercolor{subsection in head/foot}{fg=DarkPurple}
+\setbeamercolor{title in head/foot}{fg=white, bg=DarkPurple}
+\setbeamercolor{date in head/foot}{fg=grey}
+\setbeamercolor{block title}{fg=white, bg=DarkPurple}
+\setbeamercolor{block body}{bg=gray!20}
+
+
+\newverbcommand{\bverb}
+{\begin{lrbox}{\verbbox}}
+  {\end{lrbox}\colorbox{PalePurple!40}{\box\verbbox}}
+
+%% Structure of a slide :
+\setbeamertemplate{footline}
+{
+\leavevmode%
+\hbox{%
+\begin{beamercolorbox}[wd=.75\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+\usebeamerfont{author in head/foot}
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+\hspace*{1ex}
+\end{beamercolorbox}}%
+}
+\author{Alexander E. Zarebski}
+\date{\today}
+\title{ESS with Spacemacs}
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+  \frametitle{Questions}
+  \begin{itemize}
+  \item What is Spacemacs?
+  \item How do I get started?
+  \item Where can I learn more?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What is Spacemacs?}
+  Spacemacs is a configuration starter kit, the design of which is guided by four
+  core pillars.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Core pillars}
+ \begin{itemize}
+ \item Mnemonic
+ \item Discoverable
+ \item Consistent
+ \item ``Crowd-Configured''
+ \end{itemize} 
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{Mnemonic and discoverable}
+
+  \begin{itemize}
+  \item \bverb|SPC f| file management eg \bverb|SPC f f| for \emph{find file}
+  \item \bverb|SPC m| major mode commands eg \bverb|SPC m s b| to \emph{send buffer} to REPL
+  \item \bverb|SPC w/b/g| for window/buffer/magit management\dots
+  \end{itemize} 
+\end{frame}
+
+
+  \begin{frame}
+    \frametitle{Consistent}
+    Functionality is largely language agnostic, so you only need to learn the
+    keys once.
+  \end{frame}
+
+
+  \begin{frame}
+    \frametitle{Crowd-configured}
+    You don't have time to get the perfect emacs configuration, so let the
+    community help you!
+  \end{frame}
+
+
+  \begin{frame}
+    \frametitle{Layers}
+    Functionality is implemented in \emph{layers}, eg there is an ESS layer and
+    a Python layer and a magit layer, and you can build new ones by stacking
+    existing layers.
+  \end{frame}
+
+  
+  \begin{frame}
+    \frametitle{Quick start}
+    There is a generic quick start guide in the documentation and an ESS
+    specific guide is included in this repository.
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Next steps}
+    \begin{itemize}
+    \item Online and builtin documentation
+    \item Github
+    \item Gitter
+    \item Reddit
+    \end{itemize}
+  \end{frame}
+  
+\end{document}
+
+
