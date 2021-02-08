@@ -4,10 +4,11 @@
 
 * Goals of this presentation
 
-1. Convey why spacemacs might be of interest
+1. Convey why spacemacs might be of interest to ESS users
 2. Ultra-quick start guide to ESS via spacemacs
 3. Give pointers for further spacemacs use
 
+* TODO _Write this section_ Why use a starter pack
 * What is spacemacs?
 
 Spacemacs is a configuration of emacs. It is designed to offer a nice experience
@@ -25,6 +26,40 @@ ergonomics, mnemonics and consistency
 
 An important part of spacemacs is the idea of /layers/; we will see some layers
 in a bit later in this presentation.
+
+* TODO _Expand on the material in this section_ Core pillars
+
+#+begin_quote
+ergonomics, mnemonics and consistency 
+#+end_quote
+
+** ergonomics
+
+Keybindings start with =SPC= and everything uses helm, and it has beautiful
+light and dark themes already configured (=SPC T n=)
+
+** mnemonics
+
+Often you can guess the keybindings for common functionality
+
+- /files/ =SPC f=
+  + /find file/ =SPC f f=
+  + dired /jump/ =SPC f j=
+- /modes/ =SPC m=
+  + /go/ to a definition =SPC m g=
+  + /send/ code to the REPL =SPC m s=
+  + /evaluate/ code =SPC m e=
+- /buffers/ =SPC b=
+- /windows/ =SPC w=
+- /quit/ =SPC q= for the many ways to quit emacs (sorry vim).
+- /git/ =SPC g= for the the magit layer
+  
+** consistency
+
+This is a really good aspect of spacemacs, the bindings are very consistent
+across layers which makes switching between languages is easy.
+
+[[https://www.spacemacs.org/layers/LAYERS.html]]
 
 * Ultra-quick start guide
 
@@ -141,40 +176,6 @@ emacs, there is even a spotify layer.
 
 - =C-x k= to /kill/ the REPL.
   
-* Core pillars
-
-#+begin_quote
-ergonomics, mnemonics and consistency 
-#+end_quote
-
-** ergonomics
-
-Keybindings start with =SPC= and everything uses helm, and it has beautiful
-light and dark themes already configured (=SPC T n=)
-
-** mnemonics
-
-Often you can guess the keybindings for common functionality
-
-- /files/ =SPC f=
-  + /find file/ =SPC f f=
-  + dired /jump/ =SPC f j=
-- /modes/ =SPC m=
-  + /go/ to a definition =SPC m g=
-  + /send/ code to the REPL =SPC m s=
-  + /evaluate/ code =SPC m e=
-- /buffers/ =SPC b=
-- /windows/ =SPC w=
-- /quit/ =SPC q= for the many ways to quit emacs (sorry vim).
-- /git/ =SPC g= for the the magit layer
-  
-** consistency
-
-This is a really good aspect of spacemacs, the bindings are very consistent
-across layers which makes switching between languages is easy.
-
-[[https://www.spacemacs.org/layers/LAYERS.html]]
-
 * More spacemacs
 
 - Documentation builtin: =SPC h SPC=
