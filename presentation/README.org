@@ -5,32 +5,35 @@
 * Goals of this presentation
 
 1. Convey why spacemacs might be of interest to ESS users
+   - What is spacemacs and why it is useful
 2. Ultra-quick start guide to ESS via spacemacs
+   - Installation to a full R development environment
 3. Give pointers for further spacemacs use
+   - Further resources to extract the most of out this kit.
 
-* TODO _Write this section_ Why use a starter pack
 * What is spacemacs?
 
 Spacemacs is a configuration of emacs. It is designed to offer a nice experience
-out-of-the-box and provides a framework for further customisation. The following
-quotes from the Spacemacs documentation are useful for getting an idea of what
-it is all about.
+out-of-the-box and provides a framework for further customisation. Spacemacs has
+an consistent interface and an emphasis on mnemonics to create discoverable
+keybindings. The former means that once you learn how to use spacemacs for
+working in one language, it is very easy to transfer that knowledge when working
+with another language. The later means that you don't need to dig through the
+documentation to figure out how to perform simple tasks and you often will find
+functionality that you didn't know existed. As a result you spend more time on
+your code and less on your coding environment. The design of spacemacs is
+largely influenced by four core pillars.
+
+* Core pillars
+
+Spacemacs has been designed along the lines of the following core pillars. The
+following is taken from the documentation.
 
 #+begin_quote
-The best editor is neither Emacs nor Vim, it's Emacs and Vim!
-#+end_quote
+Four core pillars: Mnemonic, Discoverable, Consistent and "Crowd-Configured".
 
-#+begin_quote
-ergonomics, mnemonics and consistency 
-#+end_quote
-
-An important part of spacemacs is the idea of /layers/; we will see some layers
-in a bit later in this presentation.
-
-* TODO _Expand on the material in this section_ Core pillars
-
-#+begin_quote
-ergonomics, mnemonics and consistency 
+If any of these core pillars is violated open an issue and we'll try our best to
+fix it.
 #+end_quote
 
 ** ergonomics
@@ -60,6 +63,12 @@ This is a really good aspect of spacemacs, the bindings are very consistent
 across layers which makes switching between languages is easy.
 
 [[https://www.spacemacs.org/layers/LAYERS.html]]
+
+** Crowd-configured
+
+There is not enough time to do statistics and to get your emacs configuration
+perfect. Spacemacs means that you can leverage the work of the community to get
+a really nice editor.
 
 * Ultra-quick start guide
 
