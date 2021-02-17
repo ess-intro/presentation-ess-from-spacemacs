@@ -11,6 +11,12 @@
 3. Give pointers for further spacemacs use
    - Further resources to extract the most of out this kit.
 
+** Who is this for?
+
+Users of R who are interested in the one true editor but not sure where to
+start, or existing emacs/ESS devotees who want to know what all the fuss about
+spacemacs is.
+
 * What is spacemacs?
 
 Spacemacs is a configuration of emacs. It is designed to offer a nice experience
@@ -210,3 +216,16 @@ Code Pro available, so there is no need to get hung up on this.
 Whenever I update my packages there are often warnings. For the most part these
 don't seem to cause any real problems. It would be nice to address these, but
 until it breaks I'm reluctant to sink much time into this.
+
+* Acknowledgements
+
+I am grateful to the people who have spent countless hours building the worlds
+of emacs and R, we stand on the shoulders of giants. I'd also like to thanks the
+following people for helping to get this document into a reasonable state:
+
+- Jackson Kwok @kcf-jackson
+- Daniel Nicolai @dalanicolai
+- Lucius Hu @lebensterben
+- Maximilian Wolff @smile13241324
+
+

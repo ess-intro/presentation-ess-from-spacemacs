@@ -7,24 +7,10 @@
 
 * Intended audience
 
-Users of R who are interested ESS and who do not necessarily already have emacs
-experience, and ESS users who want to know what this spacemacs thing is that the
-cool kids are talking about.
+Users of R who are interested in the one true editor but not sure where to
+start, or existing emacs/ESS devotees who want to know what all the fuss about
+spacemacs is.
 
 * Presentation
 
 The presentation is in [[file:./presentation/README.org][=presentation/README.org=]]
-
-** Outline
-
-1. Motivation for spacemacs
-   - opinionated quick-start configuration
-   - vim/emacs keybindings
-   - "ergonomics, mnemonics and consistency"
-   - setting up your layers
-2. How setting up ESS differs for spacemacs (following the steps in
-   [[https://github.com/ess-intro/presentation-ess-base-install][presentation-ess-base-install]]).
-   - Basically, add the =ess= layer and you're good to go
-3. How to learn more about spacemacs
-   - Navigating the website and layers list
-   - How to incorporate your own configuration
