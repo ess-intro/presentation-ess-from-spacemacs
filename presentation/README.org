@@ -62,8 +62,9 @@ Often you can guess the keybindings for common functionality
 
 ** consistency
 
-This is a really good aspect of spacemacs, the bindings are very consistent
-across layers which makes switching between languages is easy.
+Consistency is one of the killer features of spacemacs, the bindings are very
+consistent across layers which makes switching between languages very easy and
+makes it very easy to set up a development environment for a new language.
 
 [[https://www.spacemacs.org/layers/LAYERS.html]]
 
@@ -81,6 +82,8 @@ Followed by a simple example to demonstrate what ESS looks like in spacemacs.
 ** Clone the spacemacs repository
 
 *WARNING:* Please back up any existing configuration files before proceeding.
+The command below will attempt to clone spacemacs into a directory,
+=~/.emacs.d=
 
 Cloning the spacemacs repository from github using the command shown below
 creates a =.emacs.d= directory in your home directory. It is this repository
@@ -93,6 +96,16 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 #+end_src
 
 [[../resources/clone-spacemacs.png]]
+
+At this point, you may want to double check that the contents of the directory
+=~/.emacs.d= looks like the code on the GitHub page.
+
+** Develop is default
+
+Please note that the /default/ branch of spacemacs is =develop=, so you will be
+on this branch when you clone the repository. You should stick to this branch
+unless you have a good reason not to. There is a =master= branch, but it has
+gone stale and should not be consumed.
 
 ** Start emacs and face the Wizard
 
@@ -190,12 +203,23 @@ emacs, there is even a spotify layer.
   
 * More spacemacs
 
+The spacemacs community is very friendly, I asked for reviews of this document
+on gitter and GitHub and got some really nice responses. The following places
+might be useful starting points to learn a bit more.
+
 - Documentation builtin: =SPC h SPC=
 - [[https://www.reddit.com/r/spacemacs]]
 - There is a vim clone [[https://github.com/SpaceVim/SpaceVim][SpaceVim]]
 - My tweaks to spacemacs are documented [[https://github.com/aezarebski/nicemacs][here]].
   
 * Gotchas
+
+** Did you /really/ clone spacemacs?
+
+If you already have a =.emacs.d= directory, the command to clone spacemacs may
+not work as expected. Please double check that the contents of that directory
+look like the code on GitHub if you are having trouble getting spacemacs to
+start.
 
 ** Vim keybindings while viewing Info pages
 
@@ -204,18 +228,21 @@ spacemacs. The keys =np[]lrmsb<SPC>= all kind of work provided you hit =\= first
 to jump into emacs keybindings. To navigate around the text, you get =hjkl= by
 default.
 
-** Source Code Pro
+** Source Code Pro and fonts in general
 
 Spacemacs seems to like to use source code pro, this beyond the scope of this
 presentation, but there are good instructions for installing it all over the
 internet. It appears that spacemacs works fine even if you do not have Source
-Code Pro available, so there is no need to get hung up on this.
+Code Pro available, so there is no need to get hung up on this. There is a
+section of the documentation that deals with fonts for spacemacs:
+https://develop.spacemacs.org/doc/DOCUMENTATION.html#font
 
 ** Warnings when updating packages
 
 Whenever I update my packages there are often warnings. For the most part these
 don't seem to cause any real problems. It would be nice to address these, but
-until it breaks I'm reluctant to sink much time into this.
+until it breaks I'm reluctant to sink much time into this. I've never needed to
+use the "rollback updates" button, but it is comforting to know it is there...
 
 * Acknowledgements
 
