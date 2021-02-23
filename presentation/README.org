@@ -4,31 +4,30 @@
 
 * Goals of this presentation
 
-1. Convey why spacemacs might be of interest to ESS users
-   - What is spacemacs and why it is useful
-2. Ultra-quick start guide to ESS via spacemacs
+1. Convey why Spacemacs might be of interest to ESS users
+   - What is Spacemacs and why it is useful
+2. Ultra-quick start guide to ESS via Spacemacs
    - Installation to a full R development environment
-3. Give pointers for further spacemacs use
+3. Give pointers for further Spacemacs use
    - Further resources to extract the most of out this kit.
 
 ** Who is this for?
 
 Users of R who are interested in the one true editor but not sure where to
 start, or existing emacs/ESS devotees who want to know what all the fuss about
-spacemacs is.
+Spacemacs is.
 
-* What is spacemacs?
+* What is Spacemacs?
 
 Spacemacs is a configuration of emacs. It is designed to offer a nice experience
 out-of-the-box and provides a framework for further customisation. Spacemacs has
-an consistent interface and an emphasis on mnemonics to create discoverable
-keybindings. The former means that once you learn how to use spacemacs for
-working in one language, it is very easy to transfer that knowledge when working
-with another language. The later means that you don't need to dig through the
-documentation to figure out how to perform simple tasks and you often will find
-functionality that you didn't know existed. As a result you spend more time on
-your code and less on your coding environment. The design of spacemacs is
-largely influenced by four core pillars.
+a consistent interface with an emphasis on mnemonics intended to create
+discoverable keybindings. The former means that once you learn how to use
+Spacemacs for working in one language, it is very easy to transfer that
+knowledge when working with another language. The later means that you don't
+need to dig through the documentation to figure out how to perform simple tasks
+and. As a result you spend more time on your code and less on your coding
+environment. The design of Spacemacs is largely influenced by four core pillars.
 
 * Core pillars
 
@@ -62,7 +61,7 @@ Often you can guess the keybindings for common functionality
 
 ** consistency
 
-Consistency is one of the killer features of spacemacs, the bindings are very
+Consistency is one of the killer features of Spacemacs, the bindings are very
 consistent across layers which makes switching between languages very easy and
 makes it very easy to set up a development environment for a new language.
 
@@ -74,20 +73,27 @@ There is not enough time to do statistics and to get your emacs configuration
 perfect. Spacemacs means that you can leverage the work of the community to get
 a really nice editor.
 
+* Are you trying to convert me?
+
+It's no secret that vim keybindings are popular among Spacemacs users. As the
+Spacemacs documentation says: "The best editor is neither Emacs nor Vim, it's
+Emacs and Vim!" In fact, there is a vim port of Spacemacs: [[https://spacevim.org/][SpaceVim]]. Don't worry
+though, both sets of keybindings are supported as well as mixed versions.
+
 * Ultra-quick start guide
 
 There is a proper [[https://github.com/syl20bnr/spacemacs#install][installation guide]] on GitHub, but here are the main steps.
-Followed by a simple example to demonstrate what ESS looks like in spacemacs.
+Followed by a simple example to demonstrate what ESS looks like in Spacemacs.
 
-** Clone the spacemacs repository
+** Clone the Spacemacs repository
 
 *WARNING:* Please back up any existing configuration files before proceeding.
-The command below will attempt to clone spacemacs into a directory,
+The command below will attempt to clone Spacemacs into a directory,
 =~/.emacs.d=
 
-Cloning the spacemacs repository from github using the command shown below
+Cloning the Spacemacs repository from github using the command shown below
 creates a =.emacs.d= directory in your home directory. It is this repository
-that contains the actual spacemacs configuration. For the most part you can just
+that contains the actual Spacemacs configuration. For the most part you can just
 ignore this though. Emacs will find this information on start up and guide you
 through the rest of the installation.
 
@@ -102,15 +108,15 @@ At this point, you may want to double check that the contents of the directory
 
 ** Develop is default
 
-Please note that the /default/ branch of spacemacs is =develop=, so you will be
+Please note that the /default/ branch of Spacemacs is =develop=, so you will be
 on this branch when you clone the repository. You should stick to this branch
 unless you have a good reason not to. There is a =master= branch, but it has
 gone stale and should not be consumed.
 
 ** Start emacs and face the Wizard
 
-When you first start emacs after cloning the spacemacs repository you should see
-the spacemacs logo and there will be a message from a start up wizard in the
+When you first start emacs after cloning the Spacemacs repository you should see
+the Spacemacs logo and there will be a message from a start up wizard in the
 mode line. The wizard will ask you a two questions: vim or emacs keybindings and
 do you want a standard or a light installation. The defaults of vim and and
 standard work well.
@@ -118,8 +124,8 @@ standard work well.
 [[../resources/spacemacs-startup-1.png]]
 
 The wizard will generate another file in your home directory, =.spacemacs=. This
-file is useful for finetuning how spacemacs works and brings us to an important
-concept in spacemacs: /layers/.
+file is useful for finetuning how Spacemacs works and brings us to an important
+concept in Spacemacs: /layers/.
 
 ** An interlude into layers
 
@@ -145,10 +151,10 @@ makes it much simpler to use multiple languages.
 
 ** Open the configuration file: =SPC f e d=
 
-/Okay, so now we know what layers are, how do we tell spacemacs which ones we
+/Okay, so now we know what layers are, how do we tell Spacemacs which ones we
 want?/ This is done using the =dotspacemacs-configuration-layers= variable in
 the =.spacemacs= file, which was automagically generated when you installed
-spacemacs. You can visit the =.spacemacs= file using =SPC f e d= (ie press the
+Spacemacs. You can visit the =.spacemacs= file using =SPC f e d= (ie press the
 space bar, then the f-key, then the e-key then the d-key).
 
 ** Set up your layers in =dotspacemacs-configuration-layers=
@@ -201,30 +207,30 @@ emacs, there is even a spotify layer.
 
 - =C-x k= to /kill/ the REPL.
   
-* More spacemacs
+* More Spacemacs
 
-The spacemacs community is very friendly, I asked for reviews of this document
+The Spacemacs community is very friendly, I asked for reviews of this document
 on gitter and GitHub and got some really nice responses. The following places
 might be useful starting points to learn a bit more.
 
 - Documentation builtin: =SPC h SPC=
 - [[https://www.reddit.com/r/spacemacs]]
 - There is a vim clone [[https://github.com/SpaceVim/SpaceVim][SpaceVim]]
-- My tweaks to spacemacs are documented [[https://github.com/aezarebski/nicemacs][here]].
+- My tweaks to Spacemacs are documented [[https://github.com/aezarebski/nicemacs][here]].
   
 * Gotchas
 
-** Did you /really/ clone spacemacs?
+** Did you /really/ clone Spacemacs?
 
-If you already have a =.emacs.d= directory, the command to clone spacemacs may
+If you already have a =.emacs.d= directory, the command to clone Spacemacs may
 not work as expected. Please double check that the contents of that directory
-look like the code on GitHub if you are having trouble getting spacemacs to
+look like the code on GitHub if you are having trouble getting Spacemacs to
 start.
 
 ** Vim keybindings while viewing Info pages
 
 I find Info pages confusing in general, but they seem even more confusing via
-spacemacs. The keys =np[]lrmsb<SPC>= all kind of work provided you hit =\= first
+Spacemacs. The keys =np[]lrmsb<SPC>= all kind of work provided you hit =\= first
 to jump into emacs keybindings. To navigate around the text, you get =hjkl= by
 default.
 
@@ -232,9 +238,9 @@ default.
 
 Spacemacs seems to like to use source code pro, this beyond the scope of this
 presentation, but there are good instructions for installing it all over the
-internet. It appears that spacemacs works fine even if you do not have Source
+internet. It appears that Spacemacs works fine even if you do not have Source
 Code Pro available, so there is no need to get hung up on this. There is a
-section of the documentation that deals with fonts for spacemacs:
+section of the documentation that deals with fonts for Spacemacs:
 https://develop.spacemacs.org/doc/DOCUMENTATION.html#font
 
 ** Warnings when updating packages
@@ -254,5 +260,4 @@ following people for helping to get this document into a reasonable state:
 - Daniel Nicolai @dalanicolai
 - Lucius Hu @lebensterben
 - Maximilian Wolff @smile13241324
-
 
