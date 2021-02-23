@@ -208,7 +208,22 @@ emacs, there is even a spotify layer.
 You can use =C-x k= to select a buffer to /kill/. For example you could use this
 and then select the R REPL. Alternatively, there is the more memorable =SPC b d=
 which I suppose corresponds to /buffer/ and /delete/.
-  
+
+* More ESS
+
+The ESS layer has a lot more statistics oriented features. To learn more about
+these, check out the [[https://develop.spacemacs.org/layers/+lang/ess/README.html][ESS layer documentation]]. There are instructions there on
+setting up LSP, which is surprisingly easy! Just add the LSP layer to your layer
+list and tell ESS that you want to use LSP with the following.
+
+#+begin_src emacs-lisp
+(ess :variables ess-r-backend 'lsp)
+#+end_src
+
+Note that for this to work, you'll need the R package, =languageserver=
+installed. It is available on CRAN. If you use other languages such as Stan and
+MATLAB, there are links there to the [[https://develop.spacemacs.org/layers/+lang/major-modes/README.html][extra languages]] layer.
+
 * More Spacemacs
 
 The Spacemacs community is very friendly, I asked for reviews of this document
