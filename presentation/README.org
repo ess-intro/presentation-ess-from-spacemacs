@@ -234,7 +234,9 @@ start.
 I find Info pages confusing in general, but they seem even more confusing via
 Spacemacs. The keys =np[]lrmsb<SPC>= all kind of work provided you hit =\= first
 to jump into emacs keybindings. To navigate around the text, you get =hjkl= by
-default.
+default. The most Spacemacs-ey keybindings for working with Info pages seems to
+be a topic of debate, but if you are reading this, you might find the persistent
+which-key approach interesting.
 
 ** Source Code Pro and fonts in general
 
