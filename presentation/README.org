@@ -205,7 +205,9 @@ emacs, there is even a spotify layer.
 
 ** Kill the REPL
 
-- =C-x k= to /kill/ the REPL.
+You can use =C-x k= to select a buffer to /kill/. For example you could use this
+and then select the R REPL. Alternatively, there is the more memorable =SPC b d=
+which I suppose corresponds to /buffer/ and /delete/.
   
 * More Spacemacs
 
