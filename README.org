@@ -2,14 +2,14 @@
 
 * Goals
 
-- Provide a /very/ short introduction to using [[https://ess.r-project.org/][ESS]] from [[https://www.spacemacs.org/][spacemacs]]. 
-- Demonstrate the spacemacs approach to existing ESS users.
+- Provide a /very/ short introduction to using [[https://ess.r-project.org/][ESS]] from [[https://www.spacemacs.org/][Spacemacs]].
+- Demonstrate the Spacemacs approach to existing ESS users.
 
 * Intended audience
 
 Users of R who are interested in the one true editor but not sure where to
 start, or existing emacs/ESS devotees who want to know what all the fuss about
-spacemacs is.
+Spacemacs is.
 
 * Presentation
 
