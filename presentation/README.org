@@ -43,21 +43,33 @@ fix it.
 
 ** mnemonics and discoverability
 
-Keybindings start with =SPC= and everything uses helm, and it has beautiful
-light and dark themes already configured (=SPC T n=)
-Often you can guess the keybindings for common functionality
+Keybindings start with =SPC= followed by a sequence of letters related to the
+function they invoke. For example, you can /toggle/ to the next beautiful colour
+scheme with =SPC T n=. There are more keybindings than most people will ever be
+able to remember, but you can often guess the keybindings for common
+functionality.
 
+- /buffers/ =SPC b=
 - /files/ =SPC f=
   + /find file/ =SPC f f=
   + dired /jump/ =SPC f j=
+- /git/ =SPC g= for the the magit layer
+- /jump/ to definition /in/ the file with =SPC j i=
 - /modes/ =SPC m=
   + /go/ to a definition =SPC m g=
   + /send/ code to the REPL =SPC m s=
   + /evaluate/ code =SPC m e=
-- /buffers/ =SPC b=
-- /windows/ =SPC w=
 - /quit/ =SPC q= for the many ways to quit emacs (sorry vim).
-- /git/ =SPC g= for the the magit layer
+- /search/ =SPC s= for search
+  + /search/ the current buffer with =SPC s s=
+  + /search/ the /project/ with =SPC s p=
+- /windows/ =SPC w=
+
+If you can't guess the keybinding but you know part of the name of the function
+you can search for the documentation (which includes current bindings) with =SPC
+h d f= which you can probably guess stands for /help/, /describe/, /function/.
+If you want to know the precise function bound to keys there is also =SPC h d
+k=.
 
 ** consistency
 
@@ -72,6 +84,12 @@ makes it very easy to set up a development environment for a new language.
 There is not enough time to do statistics and to get your emacs configuration
 perfect. Spacemacs means that you can leverage the work of the community to get
 a really nice editor.
+
+While writing the document, several members of the Spacemacs community pointed
+out great features that I wasn't aware of which have, with hindsight, very
+obvious bindings. Unfortunately for me, the discoverable nature of this
+functionality only works if you pay enough attention to recognise it! Lucky for
+me, there is a thriving Spacemacs community to point these things out.
 
 * Are you trying to convert me?
 
@@ -211,6 +229,8 @@ which I suppose corresponds to /buffer/ and /delete/.
 
 * More ESS
 
+** More IDE features with LSP
+
 The ESS layer has a lot more statistics oriented features. To learn more about
 these, check out the [[https://develop.spacemacs.org/layers/+lang/ess/README.html][ESS layer documentation]]. There are instructions there on
 setting up LSP, which is surprisingly easy! Just add the LSP layer to your layer
@@ -222,7 +242,13 @@ list and tell ESS that you want to use LSP with the following.
 
 Note that for this to work, you'll need the R package, =languageserver=
 installed. It is available on CRAN. If you use other languages such as Stan and
-MATLAB, there are links there to the [[https://develop.spacemacs.org/layers/+lang/major-modes/README.html][extra languages]] layer.
+MATLAB, there are links there to the [[https://develop.spacemacs.org/layers/+lang/major-modes/README.html][extra languages]] layer. If at some later
+point you want to turn off the LSP backend but want to keep the =lsp= layer for
+use with other languages, you can set the =ess-r-backend= value to ='ess=.
+
+#+begin_src emacs-lisp
+(ess :variables ess-r-backend 'ess)
+#+end_src
 
 * More Spacemacs
 
@@ -275,8 +301,8 @@ I am grateful to the people who have spent countless hours building the worlds
 of emacs and R, we stand on the shoulders of giants. I'd also like to thanks the
 following people for helping to get this document into a reasonable state:
 
-- Jackson Kwok @kcf-jackson
-- Daniel Nicolai @dalanicolai
-- Lucius Hu @lebensterben
-- Maximilian Wolff @smile13241324
-
+- Jackson Kwok =@kcf-jackson=
+- Daniel Nicolai =@dalanicolai=
+- Lucius Hu =@lebensterben=
+- Maximilian Wolff =@smile13241324=
+- Alexey =@alexey0308=
