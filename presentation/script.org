@@ -1,0 +1,25 @@
+* Hello
+** I am Alex
+*** Jumped from vim to spacemacs without stopping by vanilla emacs
+* What/why is Spacemacs?
+** Spacemacs is a friendly starter kit
+*** Looks good
+*** Easy to use
+*** Well designed
+** Based upon pillars
+*** Mnemonic and discoverable
+**** Systematic keybindings so you don't need to rely on carefully training muscle memory
+**** Makes it easy to find new functionality that is useful but you might not think to search for
+*** Consistent
+**** Consistent across languages so you can jump between projects regardless of the tech stack used
+*** Crowd configured
+**** Have the /near perfect/ configuration out of the box, by standing on the shoulders of giants
+**** Designing a UI is super tough, so let strangers on the internet do all the hard work for you
+* How is Spacemacs?
+** Quick start guide
+*** See the quick start guide I wrote for ESS focused use
+** Learning more and shooting for the moon
+*** Standard website with links to all the things
+*** Github is where you actually download the thing from and can see how it is developing
+*** Gitter if you want to chat with other users. Very friendly!
+*** Subreddit if you want a distraction from work
